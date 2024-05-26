@@ -1,14 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-	box-sizing: border-box
-}
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-	font-family: 'Unbounded', sans-serif;
-	margin: 0;
+	font-family: "Unbounded", sans-serif;
 	background: #f5f5f5;
+}
+
+a,
+p,
+button {
+	font-family: "Work Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+li,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .grid {
@@ -19,135 +30,25 @@ body {
 	margin: 20px auto;
 }
 
-p,
-a,
-button {
-	font-family: 'Work Sans', sans-serif;
-}
-
 header {
-	padding: 20px 40px;
-	background: #fff;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	/* in one line */
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	height: 60px;
-	position: sticky; /* Add this line */
-	top: 0; /* And this line */
+	margin: 0 20px;
+	padding-top: 8px;
 }
 
-header h1 {
-	grid-column: span 4;
-}
-
-header nav {
-	grid-column: 5 / span 7;
+header>nav>ul {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	gap: 30px;
+	gap: 2rem;
 }
 
-header button {
-	justify-self: end;
-}
-
-header nav a {
-	color: #00001A;
-	text-decoration: none;
-
-}
-
-
-main {
-	max-width: 1400px;
-	margin: 60px auto;
-	padding: 20px;
-}
-
-main img {
-	grid-column: span 7;
-	width: 100%;
-	border-radius: 8px;
-}
-
-/* HERO SECTION */
-
-main .hero {
-	grid-column: span 5;
-	display: flex;
-	/* justify-content: center; */
-	padding-top: 60px;
-	align-items: left;
-	flex-direction: column;
-}
-
-.hero h1 {
-	color: #00001A;
-	font-family: Unbounded;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 56px;
-}
-
-.description {
-	color: #80808b;
-	font-family: "Work Sans";
-	font-size: 16px;
-	font-style: normal;
+nav>ul>li>a {
+	color: #333;
 	font-weight: 400;
-	line-height: 150%;
-	letter-spacing: -0.32px;
-}
-
-
-button {
-	cursor: pointer;
-}
-
-.primary {
-	background: #00001A;
-	color: #fff;
-	padding: 16px 12px;
-	border-radius: 8px;
-	border: none;
-	font-size: 14px;
-	font-weight: 500;
-	min-width: 120px;
-	line-height: 18px;
-	/* 128.571% */
-}
-
-.info {
-	border: 1px solid #81d848;
-	border-radius: 8px;
-	background: rgba(129, 216, 72, 0.10);
-	
-	color: #00330B;
-	letter-spacing: -0.16px;
-
 	display: flex;
-	align-items: center;
-	padding: 16px;
-	gap: 24px;
-}
-
-.info p {
-	margin: 0;
-}
-
-.info.pill {
-	display: flex;
-	padding: 2px 4px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	border-radius: 4px;
-	background: rgba(129, 216, 72, 0.60);
-	border: none;
-	padding: 4px;
-	margin: 0;
-	font-size: 14px;
+	padding: 0.5rem;
+	gap: 0.25rem;
+	border-radius: 0.25rem;
 }
