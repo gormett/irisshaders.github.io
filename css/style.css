@@ -152,7 +152,7 @@ img {
 
 	a {
 		padding: .4rem .8rem;
-}
+	}
 }
 
 .header__buttons {
@@ -319,7 +319,143 @@ img {
 	margin-bottom: 3rem;
 }
 
-/* Footer */
+
+/* || Shaders */
+.shaders {
+	display: flex;
+	flex-direction: column;
+}
+
+.shaders__head {
+	gap: 0;
+}
+
+.shaders__title {
+	color: var(--black);
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	max-width: 15ch;
+	line-height: 95%
+}
+
+.shaders__description {
+	max-width: 50ch;
+	margin-bottom: 3rem;
+}
+
+
+.cards {
+	-webkit-overflow-scrolling: touch;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+
+
+.cards {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	gap: 2rem;
+
+	.card {
+		display: flex;
+		flex: 0 0 auto;
+		flex-direction: column;
+		height: 430px;
+		width: 360px;
+		padding: 3rem;
+		border-radius: 1rem;
+		justify-content: space-between;
+	}
+
+	.card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 0;
+		line-height: 150%;
+		/* 36px */
+	}
+
+	.card p {
+		margin-top: 1rem;
+		font-weight: 500;
+		line-height: 150%;
+		letter-spacing: -0.42px;
+		max-width: 35ch;
+	}
+}
+
+.button--tertiary {
+	max-width: fit-content;
+}
+
+
+/* || Cards individual */
+
+.card--bsl {
+	background-color: var(--yellow-iris);
+	background-image: url();
+	background-size: cover;
+
+	h3,
+	p {
+		color: var(--white);
+	}
+}
+
+.card--complementary {
+	background-color: var(--green-iris);
+	background-image: url();
+	background-size: cover;
+
+	h3,
+	p {
+		color: var(--white);
+	}
+}
+
+
+.card--rethinking-voxels {
+	background-color: var(--mint-iris);
+	background-image: url();
+	background-size: cover;
+
+	h3,
+	p {
+		color: var(--white);
+	}
+}
+
+.card--solas {
+	background-color: var(--light-blue-iris);
+	background-image: url();
+	background-size: cover;
+
+	h3,
+	p {
+		color: var(--white);
+	}
+}
+
+.card--browse {
+	background-color: var(--pink-iris);
+	background-image: url();
+	background-size: cover;
+
+	h3,
+	p {
+		color: var(--white);
+	}
+}
+
+
+/* || Footer */
 .footer {
 	display: flex;
 	justify-content: center;
@@ -363,8 +499,8 @@ img {
 	.footer__link__title {
 		color: var(--dark-gray-blue);
 		margin-bottom: .8rem;
-	font-weight: 600;
-	line-height: 125%;
+		font-weight: 600;
+		line-height: 125%;
 	}
 }
 
