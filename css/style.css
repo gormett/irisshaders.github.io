@@ -94,12 +94,13 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
-	background: var(--black);
-	color: var(--white);
-	padding: .8rem 2rem;
 	border-radius: 0.3rem;
 	transition: transform 0.1s ease;
+
+	padding: .8rem 2rem;
+	background: var(--black);
+	color: var(--white);
+
 }
 
 button:hover {
@@ -139,12 +140,26 @@ img {
 	padding: .2rem .4rem;
 }
 
+.header__buttons {
+	display: flex;
+	gap: 1rem;
+}
+
 .header__button {
 	padding: .8rem 2rem;
+	background: var(--black);
+	color: var(--white);
+}
+
+.header__button__theme {
+	padding: .8rem 1.25rem;
+	background: var(--white);
+	color: var(--dark-gray-blue);
 }
 
 /* Main */
 .main {
+	padding-top: 3rem;
 	max-width: 1400px;
 	margin: 0 auto;
 	display: flex;
@@ -158,6 +173,11 @@ img {
 	flex-direction: row;
 	gap: 2rem;
 	align-items: center;
+}
+
+.hero__image {
+	max-width: 70%;
+	height: auto;
 }
 
 .hero__text {
@@ -179,7 +199,8 @@ img {
 }
 
 .button--primary {
-	margin-top: 2rem;
+	padding: .8rem 6rem;
+	max-width: max-content;
 }
 
 /* Info */
@@ -208,7 +229,7 @@ img {
 }
 
 .info:hover .info__pill {
-	transform: scale(1.05);
+	/* transform: scale(1.05); */
 }
 
 /* Pills */
@@ -291,12 +312,28 @@ img {
 	padding: 2rem 0 6rem;
 }
 
+.footer__logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.footer__socials {
+	display: flex;
+	max-width: max-content;
+	justify-content: space-evenly;
+	gap: 1rem;
+	margin-top: 2rem;
+	background: var(--orange-iris)
+}
+
 
 .footer__links {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 1.5rem;
+	gap: 1rem;
 	font-size: 1rem;
 	font-weight: 600;
 	line-height: 125%;
