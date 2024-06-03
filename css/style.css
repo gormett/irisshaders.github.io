@@ -454,6 +454,52 @@ img {
 	}
 }
 
+/* || Distant Horizons */
+.distanthorizons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.distanthorizons__head {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	gap: 20rem;
+	max-width: 1440px;
+}
+
+.button--secondary {
+	padding: .6rem 3rem;
+	color: var(--black);
+	background: var(--white);
+	border: 2px solid var(--black);
+	flex: 0 0 auto;
+	white-space: nowrap;
+	gap: 1rem;
+
+	img {
+		max-height: 36px;
+		border-radius: 0;
+	}
+}
+
+.distanthorizons__title {
+	color: var(--black);
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	max-width: 15ch;
+	line-height: 95%
+}
+
+.distanthorizons__description {
+	max-width: 50ch;
+	margin-bottom: 3rem;
+}
 
 /* || Footer */
 .footer {
