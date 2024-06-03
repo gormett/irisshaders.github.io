@@ -5,8 +5,6 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Redesign</title>
-	<!-- normalize css -->
-	<!-- <link rel="stylesheet" href="./css/reset.css"> -->
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	<!-- favicon -->
@@ -39,43 +37,41 @@
 		<button class="button__primary" type="button">Download</button>
 	</header>
 
-	<main class="grid">
-		<!-- <section class="hero"> -->
-		<img src="images/hero_image_Creator_Shaders_800_800.png" alt="Iris Shaders" />
+	<main>
+		<section class="hero">
+			<img src="images/hero_image_Creator_Shaders_800_800.png" alt="Iris Shaders" />
 
-		<div class="text">
-			<div class="info">
-				<p>Update</p>
-				<a href="/">
-					<p>Iris now works with Distant Horizons</p>
+			<div class="text">
+
+				<a class="info" href="/">
+					<p class="pill">Update</p>
+					Iris now works with Distant Horizons
 					<img src="images/icons/open_in_new.svg" alt="Open in new tab" />
 				</a>
-			</div>
 
-			<h1>Stunning visuals and smooth gameplay</h1>
-			<p class="description">
-				Iris Shaders is an open-source mod for Minecraft that brings
-				OptiFine shaders to Fabric, with the performance of Sodium.
-			</p>
-
-			<button class="button__primary cta" type="button">
-				Download installer
-			</button>
-		</div>
-		<!-- </section> -->
-
-		<h2>test</h2>
-		<!-- <section class="slideshow">
-			<div class="pills">
-				<p class="pill">
-					<img src="images/icons/bolt.svg" alt="bolt">
-					Fast Fast Fast Fast
+				<h1>Stunning visuals and smooth gameplay</h1>
+				<p class="description">
+					Iris Shaders is an open-source mod for Minecraft that brings
+					OptiFine shaders to Fabric, with the performance of Sodium.
 				</p>
-				<p class="pill">
+
+				<button class="button__primary cta" type="button">
+					Download installer
+				</button>
+			</div>
+		</section>
+
+		<section class="slideshow">
+			<div class="pills">
+				<p>
+					<img src="images/icons/bolt.svg" alt="bolt">
+					Fast
+				</p>
+				<p>
 					<img src="images/icons/alt_route.svg" alt="alt_route">
 					Open-source
 				</p>
-				<p class="pill">
+				<p>
 					<img src="images/icons/sell.svg" alt="sell">
 					Free
 				</p>
@@ -83,17 +79,26 @@
 
 			<h2>Iris Shaders</h2>
 
-			<p>Iris Shaders is blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+			<p class="description">Iris Shaders is blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+				blah blah blah blah
 				blah blah blah</p>
 
-			<div class="slides">
+			<div class="carousel">
+				hm
 				<img src="" alt=""><img src="" alt=""><img src="" alt="">
 			</div>
 		</section>
 
+
 		<section class="shaders">
 			<h2>Transform the look of your game</h2>
-			<p>Check out our shader picks below or explore Modrinth with more than 60 supported shaders</p>
+			<p class="description">Check out our shader picks below or explore Modrinth with more
+				than 60 supported shaders
+			</p>
+
+			<div class="cards">
+
+			</div>
 		</section>
 
 
@@ -102,7 +107,8 @@
 				<div>
 
 					<h2>Discover the horizon</h2>
-					<p>Iris now works with Distant Horizons, leverage LODs and enjoy more than 300 chunks render distance.</p>
+					<p class="description">Iris now works with Distant Horizons, leverage LODs and enjoy more than 300 chunks
+						render distance.</p>
 				</div>
 				<button>Visit Distant Horizons</button>
 			</div>
@@ -110,7 +116,8 @@
 
 		<section class="developers">
 			<h2>Beyond OptiFine for Developers</h2>
-			<p>Iris Shaders is an open-source mod for Minecraft that brings OptiFine shaders to Fabric, with the performance
+			<p class="description">Iris Shaders is an open-source mod for Minecraft that brings OptiFine shaders to Fabric,
+				with the performance
 				of Sodium.</p>
 
 			<div>
@@ -133,9 +140,10 @@
 				</div>
 			</div>
 		</section>
+		<!-- 
 		<section class="patreon">
 			<h2>Cutting edge of Minecraft shaders</h2>
-			<p>Want to see what the best of the best has to offer before it goes public ? Support us on our Patreon and gain
+			<p class="description">Want to see what the best of the best has to offer before it goes public ? Support us on our Patreon and gain
 				access to early prototypes, alpha and beta builds or even a priority support channel.</p>
 			<button></button>
 			<img>
