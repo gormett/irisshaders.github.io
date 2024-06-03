@@ -12,163 +12,82 @@
 </head>
 
 <body>
-	<header>
+	<script src="./js/scroll.js"></script>
+	<header class="header">
 		<a href="/">
-			<img src="images/icons/logo.svg" alt="Iris Shaders" />
+			<img src="images/icons/logo.svg" alt="Iris Shaders" class="header__logo" />
 		</a>
-		<nav>
-			<ul>
-				<li>
-					<a href="/">Shaders
-						<img src="images/icons/open_in_new.svg" alt="Open in new tab" />
-					</a>
-				</li>
-				<li>
-					<a href="/">For Developers</a>
-				</li>
-				<li>
-					<a href="/">FAQ</a>
-				</li>
-				<li>
-					<a href="/">About</a>
-				</li>
-			</ul>
+		<nav class="header__nav">
+			<a href="/" class="nav__link">Shaders
+				<img src="images/icons/open_in_new.svg" alt="Open in new tab" />
+			</a>
+			<a href="/" class="nav__link">For Developers</a>
+			<a href="/" class="nav__link">FAQ</a>
+			<a href="/" class="nav__link">About</a>
 		</nav>
-		<button class="button__primary" type="button">Download</button>
+		<button type="button" class="header__button">Download</button>
 	</header>
 
-	<main>
+	<main class="main">
 		<section class="hero">
-			<img src="images/hero_image_Creator_Shaders_800_800.png" alt="Iris Shaders" />
+			<img src="images/hero_image_Creator_Shaders_800_800.png" alt="Iris Shaders" class="hero__image" />
 
-			<div class="text">
-
+			<div class="hero__text">
 				<a class="info" href="/">
-					<p class="pill">Update</p>
+					<p class="info__pill">Update</p>
 					Iris now works with Distant Horizons
-					<img src="images/icons/open_in_new.svg" alt="Open in new tab" />
 				</a>
-
-				<h1>Stunning visuals and smooth gameplay</h1>
-				<p class="description">
-					Iris Shaders is an open-source mod for Minecraft that brings
-					OptiFine shaders to Fabric, with the performance of Sodium.
+				<h1 class="hero__title">Stunning visuals and smooth gameplay</h1>
+				<p class="hero__description">
+					Iris Shaders is an open-source mod for Minecraft that brings OptiFine shaders to Fabric, with the performance
+					of Sodium.
 				</p>
-
-				<button class="button__primary cta" type="button">
-					Download installer
-				</button>
+				<button class="button button--primary" type="button">Download installer</button>
 			</div>
 		</section>
 
 		<section class="slideshow">
-			<div class="pills">
-				<p>
-					<img src="images/icons/bolt.svg" alt="bolt">
-					Fast
-				</p>
-				<p>
-					<img src="images/icons/alt_route.svg" alt="alt_route">
-					Open-source
-				</p>
-				<p>
-					<img src="images/icons/sell.svg" alt="sell">
-					Free
-				</p>
-			</div>
-
-			<h2>Iris Shaders</h2>
-
-			<p class="description">Iris Shaders is blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-				blah blah blah blah
-				blah blah blah</p>
-
-			<div class="carousel">
-				hm
-				<img src="" alt=""><img src="" alt=""><img src="" alt="">
-			</div>
-		</section>
-
-
-		<section class="shaders">
-			<h2>Transform the look of your game</h2>
-			<p class="description">Check out our shader picks below or explore Modrinth with more
-				than 60 supported shaders
-			</p>
-
-			<div class="cards">
-
-			</div>
-		</section>
-
-
-		<section class="dh">
-			<div>
-				<div>
-
-					<h2>Discover the horizon</h2>
-					<p class="description">Iris now works with Distant Horizons, leverage LODs and enjoy more than 300 chunks
-						render distance.</p>
+			<div class="slideshow__head">
+				<div class="pills">
+					<p class="pill pill--fast">
+						<img src="images/icons/bolt.svg" alt="bolt"> Fast
+					</p>
+					<p class="pill pill--open-source">
+						<img src="images/icons/alt_route.svg" alt="alt_route"> Open-source
+					</p>
+					<p class="pill pill--free">
+						<img src="images/icons/sell.svg" alt="sell"> Free
+					</p>
 				</div>
-				<button>Visit Distant Horizons</button>
-			</div>
-		</section>
-
-		<section class="developers">
-			<h2>Beyond OptiFine for Developers</h2>
-			<p class="description">Iris Shaders is an open-source mod for Minecraft that brings OptiFine shaders to Fabric,
-				with the performance
-				of Sodium.</p>
-
-			<div>
-				<img>
-				<div>
-					<div>
-						<h3>Shader storage buffer objects </h3>
-						<p>Pass arbitrary data between programs, and even frames if desired. They can store any buffer data that
-							fits within the size of the SSBO, and be read at any point.</p>
-					</div>
-					<div>
-						<h3></h3>
-						<p></p>
-					</div>
-					<div>
-						<h3></h3>
-						<p></p>
-					</div>
-					<button></button>
+				<h2 class="slideshow__title">Iris Shaders</h2>
+				<p class="slideshow__description">Iris Shaders is blah blah blah blah blah blah blah blah blah blah blah blah
+					blah blah blah blah blah blah blah blah</p>
+				<div class="carousel">
+					<img src="/images/section_image_Creator_Shaders_X_Y.png" alt="carousel image" class="carousel__image">
 				</div>
 			</div>
 		</section>
-		<!-- 
-		<section class="patreon">
-			<h2>Cutting edge of Minecraft shaders</h2>
-			<p class="description">Want to see what the best of the best has to offer before it goes public ? Support us on our Patreon and gain
-				access to early prototypes, alpha and beta builds or even a priority support channel.</p>
-			<button></button>
-			<img>
-		</section> -->
 	</main>
 
-	<footer>
-		<img />
-		<ul>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
+	<footer class="footer">
+		<img src="images/logo-footer.png" alt="Iris Shaders" class="footer__logo">
+		<ul class="footer__links">Downloads
+			<li class="footer__link"><a href="http://">Direct download</a></li>
+			<li class="footer__link"><a href="http://">Modrinth</a></li>
 		</ul>
-
-		<ul>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
+		<ul class="footer__links">Iris Shaders
+			<li class="footer__link"><a href="http://">Supported Shaders</a></li>
+			<li class="footer__link"><a href="http://">Documentation</a></li>
+			<li class="footer__link"><a href="http://">FAQ</a></li>
+			<li class="footer__link"><a href="http://">About</a></li>
+			<li class="footer__link"><a href="http://">Branding</a></li>
 		</ul>
-		<ul>
-			<li><a href="http://">Link</a></li>
-			<li><a href="http://">Link</a></li>
+		<ul class="footer__links">Contribute
+			<li class="footer__link"><a href="http://">GitHub</a></li>
+			<li class="footer__link"><a href="http://">Patreon</a></li>
 		</ul>
 	</footer>
 </body>
+
 
 </html>
