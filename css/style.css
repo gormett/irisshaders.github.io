@@ -186,6 +186,17 @@ img {
 	color: var(--dark-gray-blue);
 }
 
+/* || GLOBAL */
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	line-height: 95%
+}
+
 /* || Main */
 .main {
 	padding-top: 3rem;
@@ -344,14 +355,7 @@ img {
 }
 
 .shaders__title {
-	color: var(--black);
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin: 0;
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
 	max-width: 15ch;
-	line-height: 95%
 }
 
 .shaders__description {
@@ -508,14 +512,7 @@ img {
 }
 
 .distanthorizons__title {
-	color: var(--black);
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin: 0;
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
 	max-width: 15ch;
-	line-height: 95%
 }
 
 .distanthorizons__description {
@@ -546,12 +543,6 @@ img {
 }
 
 .developers__title {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin: 0;
-	margin-top: 1.5rem;
-	margin-bottom: 1rem;
-	line-height: 95%;
 	text-align: center;
 }
 
