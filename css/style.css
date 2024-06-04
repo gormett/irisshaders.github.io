@@ -223,18 +223,20 @@ img {
 .hero__text {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
 }
 
 .hero__title {
 	font-size: 3rem;
 	line-height: 56px;
 	font-weight: 700;
+	margin-bottom: 1rem;
+	padding: 0;
 }
 
 .hero__description {
 	color: var(--light-gray-blue);
 	max-width: 50ch;
+	margin-bottom: 2.5rem;
 }
 
 .button--primary {
@@ -254,6 +256,7 @@ img {
 	background: #81d8481a;
 	border-radius: .5rem;
 	max-width: fit-content;
+	margin-bottom: 1rem;
 }
 
 .info__pill {
@@ -602,7 +605,7 @@ img {
 		margin-bottom: 1rem;
 	}
 
-		
+
 }
 
 /* f1c4a8 */
@@ -613,7 +616,7 @@ img {
 	display: flex;
 	justify-content: center;
 	gap: 6rem;
-	padding: 2rem 0 6rem;
+	padding: 6rem 0;
 }
 
 .footer__logo {
