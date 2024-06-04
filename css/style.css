@@ -127,6 +127,20 @@ img {
 	height: auto;
 }
 
+.button--tertiary {
+	padding: .8rem 2rem;
+	background: var(--white);
+	color: var(--dark-gray-blue);
+	/* animate box shadow */
+	transition: box-shadow 0.3s ease;
+	transition: background 0.3s ease;
+}
+
+.button--tertiary:hover {
+	background: rgb(226, 226, 226);
+	box-shadow: 0 0 0 2px var(--dark-gray-blue);
+}
+
 /* || Header */
 .header {
 	position: sticky;
@@ -562,14 +576,45 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+
+	.button--secondary {
+		padding: .8rem 3rem;
+		max-width: max-content;
+	}
 }
 
-.button--primary {
-	padding: .8rem 6rem;
-	max-width: max-content;
+
+/* || Patreon */
+
+.patreon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 3rem;
+	align-items: center;
+	background: #f1c4a8;
+	border-radius: 1rem;
+	padding: 4rem 5rem 5rem;
 }
 
+.patreon__text {
+	/* center all text and items within */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
 
+	.patreon__description {
+		max-width: 80ch;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+		
+}
+
+/* f1c4a8 */
 
 
 /* || Footer */
