@@ -57,6 +57,10 @@ h2 {
 	padding: 0;
 }
 
+h1 {
+	font-size: 2em;
+}
+
 h3,
 h4,
 h5,
@@ -90,7 +94,7 @@ p {
 	color: var(--gray-blue);
 	font-size: 1rem;
 	font-weight: 400;
-	letter-spacing: -0.32px;
+	letter-spacing: -0.04em;
 }
 
 button {
@@ -194,7 +198,7 @@ img {
 	margin: 0;
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
-	line-height: 95%
+	line-height: 120%
 }
 
 /* || Main */
@@ -205,6 +209,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 8rem;
+	padding: 0 2rem;
 }
 
 /* || Hero Section */
@@ -216,8 +221,9 @@ img {
 }
 
 .hero__image {
-	max-width: 70%;
-	height: auto;
+	/* max-width: 70%; */
+	width: 100%;
+	/* height: auto; */
 }
 
 .hero__text {
@@ -226,8 +232,9 @@ img {
 }
 
 .hero__title {
-	font-size: 3rem;
-	line-height: 56px;
+	/* font-size: 5vh; */
+	/* line-height: 56px; */
+	line-height: 1.1em;
 	font-weight: 700;
 	margin-bottom: 1rem;
 	padding: 0;
@@ -240,8 +247,8 @@ img {
 }
 
 .button--primary {
-	padding: .8rem 6rem;
-	max-width: max-content;
+	padding: .8rem 4rem;
+	/* max-width: max-content; */
 }
 
 /* || Info */
@@ -346,6 +353,13 @@ img {
 	margin-bottom: 3rem;
 }
 
+.carousel img {
+	/* height: 300px; */
+	/* width: 100%; */
+	object-fit: cover;
+}
+
+
 
 /* || Shaders */
 .shaders {
@@ -359,6 +373,8 @@ img {
 
 .shaders__title {
 	max-width: 15ch;
+	line-height: 115%;
+	;
 }
 
 .shaders__description {
@@ -406,7 +422,7 @@ img {
 		margin-top: 1rem;
 		font-weight: 500;
 		line-height: 150%;
-		letter-spacing: -0.42px;
+		letter-spacing: -0.04em;
 		max-width: 35ch;
 	}
 }
@@ -483,12 +499,15 @@ img {
 
 .distanthorizons__head {
 	display: flex;
-
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	align-items: center;
-	gap: 20rem;
+	/* gap: 20rem; */
 	max-width: 1440px;
+	width: 100%;
 }
+
+.distanthorizons__text {}
 
 .button--secondary {
 	padding: .6rem 3rem;
@@ -539,6 +558,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	text-align: center;
 }
 
 .point__description {
@@ -556,7 +577,7 @@ img {
 
 .developers__wrapper {
 	display: flex;
-	max-width: 1160px;
+	flex-wrap: wrap;
 	gap: 3rem;
 }
 
@@ -570,6 +591,15 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+
+	.point__title {
+		margin-bottom: .5rem;
+	}
+
+	.point__description {
+		line-height: 120%;
+		color: var(--light-gray-blue);
+	}
 
 	.button--secondary {
 		padding: .8rem 3rem;
@@ -589,7 +619,7 @@ img {
 	align-items: center;
 	background: #f1c4a8;
 	border-radius: 1rem;
-	padding: 4rem 5rem 5rem;
+	padding: 2rem 1rem 1rem;
 }
 
 .patreon__text {
@@ -599,10 +629,19 @@ img {
 	align-items: center;
 	gap: 1.5rem;
 
+	.patreon__title {
+		text-align: center;
+	}
+
 	.patreon__description {
 		max-width: 80ch;
 		text-align: center;
 		margin-bottom: 1rem;
+	}
+
+	.button--primary img {
+		max-height: 1.5rem;
+		border-radius: 0;
 	}
 
 
@@ -614,8 +653,10 @@ img {
 /* || Footer */
 .footer {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	gap: 6rem;
+	/* justify-content: space-around; */
+	gap: 2rem;
 	padding: 6rem 0;
 }
 
@@ -660,8 +701,6 @@ img {
 	}
 }
 
-
-
 .footer__link a {
 	text-decoration: none;
 	justify-content: left;
@@ -670,34 +709,31 @@ img {
 	padding: .2rem 0;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
 
-@media (max-width: 1270px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 1360px) {
 	.hero {
 		flex-direction: column;
-		margin: 0 2rem;
 
-		.button--primary {
-			max-width: none;
-		}
-	}
-
-	.footer {
-		flex-direction: column;
-		gap: 4rem;
-		margin: 0 2rem;
-
-		.footer__link__title {
-			font-size: 1.25rem;
-			margin-bottom: -.5rem;
+		/* center */
+		/* flex-direction: row-reverse; */
+		.hero__text {
+			justify-content: center;
 		}
 
-		.footer__links {
-			gap: 1rem;
 
-			.footer__link a {
-				padding: 1rem 0;
-			}
-		}
 	}
 }
